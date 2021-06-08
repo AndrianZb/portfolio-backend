@@ -4,6 +4,10 @@ require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 
 const express = require("express");
 const cors = require("cors");
+const corsOptions = {
+    origin: 'https://portfolio-frontend-nine.vercel.app/',
+    optionsSuccessStatus: 200
+}
 
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
@@ -12,7 +16,7 @@ const subscriptionsRouter = require("./subscriptions/subscriptions.router");
 
 const app = express();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.options("*", cors());
