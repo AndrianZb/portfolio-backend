@@ -1,0 +1,92 @@
+[
+    {
+        "field_title": "name",
+        "field_type": "text",
+        "field_placeholder": "",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 1,
+        "user_id": 1
+    },
+    {
+        "field_title": "email",
+        "field_type": "email",
+        "field_placeholder": "",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 1,
+        "user_id": 1
+    },
+    {
+        "field_title": "message",
+        "field_type": "text",
+        "field_placeholder": "",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 1,
+        "user_id": 1
+    },
+    {
+        "field_title": "Name",
+        "field_type": "text",
+        "field_placeholder": "name",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 2,
+        "user_id": 2
+    },
+    {
+        "field_title": "Email Address",
+        "field_type": "email",
+        "field_placeholder": "email",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 2,
+        "user_id": 2
+    },
+    {
+        "field_title": "Phone Number",
+        "field_type": "text",
+        "field_placeholder": "phone number",
+        "field_required": false,
+        "field_active": true,
+        "form_id": 2,
+        "user_id": 2
+    },
+    {
+        "field_title": "Message",
+        "field_type": "text",
+        "field_placeholder": "message",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 2,
+        "user_id": 2
+    },
+    {
+        "field_title": "Subscribe",
+        "field_type": "email",
+        "field_placeholder": "",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 3,
+        "user_id": 3
+    },
+    {
+        "field_title": "Email Address",
+        "field_type": "email",
+        "field_placeholder": "type email address here",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 4,
+        "user_id": 3
+    },
+    {
+        "field_title": "Message",
+        "field_type": "text",
+        "field_placeholder": "type your message here",
+        "field_required": true,
+        "field_active": true,
+        "form_id": 4,
+        "user_id": 3
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "form_title": "contact",
+        "form_submit": true,
+        "form_submit_text": "Send",
+        "form_cancel": false,
+        "form_cancel_text": "",
+        "form_active": true,
+        "page_id": 3,
+        "user_id": 1
+    },
+    {
+        "form_title": "contact",
+        "form_submit": true,
+        "form_submit_text": "Submit",
+        "form_cancel": true,
+        "form_cancel_text": "Cancel",
+        "form_active": true,
+        "page_id": 5,
+        "user_id": 2
+    },
+    {
+        "form_title": "subscription",
+        "form_submit": true,
+        "form_submit_text": "Subscribe",
+        "form_cancel": false,
+        "form_cancel_text": "",
+        "form_active": true,
+        "page_id": 7,
+        "user_id": 3
+    },
+    {
+        "form_title": "contact me",
+        "form_submit": true,
+        "form_submit_text": "Submit",
+        "form_cancel": false,
+        "form_cancel_text": "",
+        "form_active": true,
+        "page_id": 8,
+        "user_id": 3
+    }
+]

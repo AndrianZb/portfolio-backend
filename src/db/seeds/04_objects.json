@@ -1,0 +1,58 @@
+[
+    {
+        "object_title": "Periodic Tables",
+        "object_text": "A web app for managing restaurant table reservations",
+        "object_active": true,
+        "page_id": 2,
+        "user_id": 1
+    },
+    {
+        "object_title": "Flashcard-O-Matic",
+        "object_text": "A web app for creating and reviewing study materials",
+        "object_active": true,
+        "page_id": 2,
+        "user_id": 1
+    },
+    {
+        "object_title": "WeLoveMovies",
+        "object_text": "A cors-enabled backend routing and postgreSQL project",
+        "object_active": true,
+        "page_id": 2,
+        "user_id": 1
+    },
+    {
+        "object_title": "Pomodoro Timer",
+        "object_text": "A single-page front-end web app for shiftwork timekeeping",
+        "object_active": true,
+        "page_id": 2,
+        "user_id": 1
+    },
+    {
+        "object_title": "Gore",
+        "object_text": "May 2016-November 2019 I have worked with W.L. GORE on a number of small and large scale projects. During my time with W.L. Gore I created several print pieces for tradeshows including event signage, booth signage, gifs, trade show ads both digital and print, banners, flyers and more. I also had the opportunity to work with the website and email marketing campaigns, editing content, creating new product pages, website marketing campaigns, and digital images for both the U.S. and International use. This was a great opportunity to work with a group of designers, marketing experts, and production teams to create visuals within a set of cohesive brand guidelines.",
+        "object_active": true,
+        "page_id": 4,
+        "user_id": 2
+    },
+    {
+        "object_title": "Hilton",
+        "object_text": "Since 2016 I have worked with the HILTON PHOENIX CHANDLER to create various pieces for both print marketing and digital marketing. Creating flyers, signage, menus, email campaigns, promotional items and more. Since my time with Hilton I have also had the chance to work within a brand guideline update which I enjoy most. I am diligent in pouring through all the new brand updates and changes to create designs that fit within the look trying to be conveyed.",
+        "object_active": true,
+        "page_id": 4,
+        "user_id": 2
+    },
+    {
+        "object_title": "Marriott",
+        "object_text": "Since 2019 I have worked with the MARRIOTT PHOENIX CHANDLER to create various works for both print and digital marketing. This was my first time getting the chance to work with a hotel before opening, creating all the pieces from the start to be cohesive with the brand voice. I have designed their flyers, cards, signage, handouts, event emails and more.",
+        "object_active": true,
+        "page_id": 4,
+        "user_id": 2
+    },
+    {
+        "object_title": "The Refuge",
+        "object_text": "While working at Gravity Webworks I and our lead designer at the time maintained websites and created print designs for Catholic Charities. During our time working with them they opened THE REFUGE coffee & wine café. This project was a great experience because I was able to work on an entire suite of print pieces which entailed menus, punch cards, comment cards, ads, social media, e-newsletters and more. We had such a wonderful working relationship that I was able to continue working with them even as an independent freelance designer through my business, Rebekah Denney Designs LLC. until 2018. Examples of web and print below.",
+        "object_active": true,
+        "page_id": 4,
+        "user_id": 2
+    }
+]
