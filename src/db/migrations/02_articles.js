@@ -3,14 +3,14 @@ exports.up = function (knex) {
         table.increments("article_id").primary();
         table.text("article_title");
         table.text("article_content");
-        table.boolean("article_active");
-        table.integer("page_id");
+        table.boolean("article_active").defaultTo(true);
+        table.integer("page_id").unsigned();
         table
             .foreign("page_id")
             .references("page_id")
             .inTable("pages")
             .onDelete("cascade");
-        table.integer("user_id");
+        table.integer("user_id").unsigned();
         table
             .foreign("user_id")
             .references("user_id")

@@ -5,14 +5,14 @@ exports.up = function (knex) {
         table.text("field_type");
         table.text("field_placeholder");
         table.boolean("field_required");
-        table.boolean("field_active");
-        table.integer("form_id");
+        table.boolean("field_active").defaultTo(true);
+        table.integer("form_id").unsigned();
         table
             .foreign("form_id")
             .references("form_id")
             .inTable("forms")
             .onDelete("cascade");
-        table.integer("user_id");
+        table.integer("user_id").unsigned();
         table
             .foreign("user_id")
             .references("user_id")

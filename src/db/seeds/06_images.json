@@ -1,63 +1,63 @@
 [
     {
         "image_title": "danieldenney.jpg",
-        "image_alt_text": "daniel denney",
+        "image_alt": "daniel denney",
         "image_active": true,
         "article_id": 1,
         "user_id": 1
     },
     {
         "image_title": "periodictables.jpg",
-        "image_alt_text": "periodic tables",
+        "image_alt": "periodic tables",
         "image_active": true,
         "object_id": 1,
         "user_id": 1
     },
     {
         "image_title": "flashcardomatic.jpg",
-        "image_alt_text": "flashcard-o-matic",
+        "image_alt": "flashcard-o-matic",
         "image_active": true,
         "object_id": 2,
         "user_id": 1
     },
     {
         "image_title": "welovemovies.jpg",
-        "image_alt_text": "welovemovies",
+        "image_alt": "welovemovies",
         "image_active": true,
         "object_id": 3,
         "user_id": 1
     },
     {
         "image_title": "pomodorotimer.jpg",
-        "image_alt_text": "pomodoro timer",
+        "image_alt": "pomodoro timer",
         "image_active": true,
         "object_id": 4,
         "user_id": 1
     },
     {
         "image_title": "gore.jpg",
-        "image_alt_text": "gore",
+        "image_alt": "gore",
         "image_active": true,
         "object_id": 5,
         "user_id": 2
     },
     {
         "image_title": "hilton.jpg",
-        "image_alt_text": "hilton",
+        "image_alt": "hilton",
         "image_active": true,
         "object_id": 6,
         "user_id": 2
     },
     {
         "image_title": "marriott.jpg",
-        "image_alt_text": "marriott",
+        "image_alt": "marriott",
         "image_active": true,
         "object_id": 7,
         "user_id": 2
     },
     {
         "image_title": "therefuge.jpg",
-        "image_alt_text": "the refuge",
+        "image_alt": "the refuge",
         "image_active": true,
         "object_id": 8,
         "user_id": 2

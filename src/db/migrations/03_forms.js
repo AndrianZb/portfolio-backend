@@ -6,14 +6,14 @@ exports.up = function (knex) {
         table.text("form_submit_text");
         table.boolean("form_cancel");
         table.text("form_cancel_text");
-        table.boolean("form_active");
-        table.integer("page_id");
+        table.boolean("form_active").defaultTo(true);
+        table.integer("page_id").unsigned();
         table
             .foreign("page_id")
             .references("page_id")
             .inTable("pages")
             .onDelete("cascade");
-        table.integer("user_id");
+        table.integer("user_id").unsigned();
         table
             .foreign("user_id")
             .references("user_id")
