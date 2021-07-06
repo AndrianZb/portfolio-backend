@@ -4,8 +4,15 @@ require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 
 const express = require("express");
 const cors = require("cors");
+const whitelist = ['http://localhost:3000', 'http://localhost:4040']
 const corsOptions = {
-    origin: 'https://portfolio-frontend-nine.vercel.app/',
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1 || !origin) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
     optionsSuccessStatus: 200
 }
 
