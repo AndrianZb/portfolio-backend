@@ -4,7 +4,7 @@ exports.up = function (knex) {
         table.text("field_title");
         table.text("field_type");
         table.text("field_placeholder");
-        table.boolean("field_required");
+        table.boolean("field_required").defaultTo(true);
         table.boolean("field_active").defaultTo(true);
         table.integer("form_id").unsigned();
         table

@@ -42,15 +42,14 @@ function hasData(req, res, next) {
     });
 }
 
-
 function hasSubmissionData(req, res, next) {
     if (req.body.data.submission_data) {
-        return next()
+        return next();
     }
     next({
         status: 400,
-        message: "data must have submission_data property"
-    })
+        message: "data must have submission_data property",
+    });
 }
 
 module.exports = {

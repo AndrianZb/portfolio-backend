@@ -2,9 +2,9 @@ exports.up = function (knex) {
     return knex.schema.createTable("forms", (table) => {
         table.increments("form_id").primary();
         table.text("form_title");
-        table.boolean("form_submit");
+        table.boolean("form_submit").defaultTo(true);
         table.text("form_submit_text");
-        table.boolean("form_cancel");
+        table.boolean("form_cancel").defaultTo(true);
         table.text("form_cancel_text");
         table.boolean("form_active").defaultTo(true);
         table.integer("page_id").unsigned();

@@ -39,8 +39,38 @@ function hasData(req, res, next) {
     });
 }
 
+function hasTitle(req, res, next) {
+    if (req.body.data.object_title) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have object_title property",
+    });
+}
+
+function hasText(req, res, next) {
+    if (req.body.data.object_text) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have object_text property",
+    });
+}
+
+function hasPageId(req, res, next) {
+    if (req.body.data.page_id) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have page_id property",
+    });
+}
+
 module.exports = {
-    create: [hasData, asyncErrorBoundary(create)],
+    create: [hasData, hasTitle, hasText, hasPageId, asyncErrorBoundary(create)],
     find: [asyncErrorBoundary(find)],
     update: [asyncErrorBoundary(update)],
     remove: [asyncErrorBoundary(remove)],

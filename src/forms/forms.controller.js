@@ -39,8 +39,61 @@ function hasData(req, res, next) {
     });
 }
 
+function hasTitle(req, res, next) {
+    if (req.body.data.form_title) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have form_title property",
+    });
+}
+
+function hasSubmitText(req, res, next) {
+    if (req.body.data.form_submit) {
+        if (req.body.data.form_submit_text) {
+            return next();
+        }
+        next({
+            status: 400,
+            message: "data must have form_submit_text property",
+        });
+    }
+    next();
+}
+
+function hasCancelText(req, res, next) {
+    if (req.body.data.form_cancel) {
+        if (req.body.data.form_cancel_text) {
+            return next();
+        }
+        next({
+            status: 400,
+            message: "data must have form_cancel_text property",
+        });
+    }
+    next();
+}
+
+function hasPageId(req, res, next) {
+    if (req.body.data.page_id) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have page_id property",
+    });
+}
+
 module.exports = {
-    create: [hasData, asyncErrorBoundary(create)],
+    create: [
+        hasData,
+        hasTitle,
+        hasSubmitText,
+        hasCancelText,
+        hasPageId,
+        asyncErrorBoundary(create),
+    ],
     find: [asyncErrorBoundary(find)],
     update: [asyncErrorBoundary(update)],
     remove: [asyncErrorBoundary(remove)],

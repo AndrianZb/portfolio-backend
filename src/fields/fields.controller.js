@@ -39,8 +39,55 @@ function hasData(req, res, next) {
     });
 }
 
+function hasTitle(req, res, next) {
+    if (req.body.data.field_title) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have field_title property",
+    });
+}
+
+function hasType(req, res, next) {
+    if (req.body.data.field_type) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have field_type property",
+    });
+}
+
+function hasPlaceholder(req, res, next) {
+    if (req.body.data.field_placeholder) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have field_placeholder property",
+    });
+}
+
+function hasFormId(req, res, next) {
+    if (req.body.data.form_id) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have form_id property",
+    });
+}
+
 module.exports = {
-    create: [hasData, asyncErrorBoundary(create)],
+    create: [
+        hasData,
+        hasTitle,
+        hasType,
+        hasPlaceholder,
+        hasFormId,
+        asyncErrorBoundary(create),
+    ],
     find: [asyncErrorBoundary(find)],
     update: [asyncErrorBoundary(update)],
     remove: [asyncErrorBoundary(remove)],

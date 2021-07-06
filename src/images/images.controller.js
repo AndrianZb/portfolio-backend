@@ -39,8 +39,42 @@ function hasData(req, res, next) {
     });
 }
 
+function hasTitle(req, res, next) {
+    if (req.body.data.image_title) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have image_title property",
+    });
+}
+
+function hasAlt(req, res, next) {
+    if (req.body.data.image_alt) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have image_alt property",
+    });
+}
+
+function hasType(req, res, next) {
+    if (
+        req.body.data.article_id ||
+        req.body.data.form_id ||
+        req.body.data.object_id
+    ) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have article_id/form_id/object_id property",
+    });
+}
+
 module.exports = {
-    create: [hasData, asyncErrorBoundary(create)],
+    create: [hasData, hasTitle, hasAlt, hasType, asyncErrorBoundary(create)],
     find: [asyncErrorBoundary(find)],
     update: [asyncErrorBoundary(update)],
     remove: [asyncErrorBoundary(remove)],

@@ -39,8 +39,52 @@ function hasData(req, res, next) {
     });
 }
 
+function hasText(req, res, next) {
+    if (req.body.data.link_text) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have link_text property",
+    });
+}
+
+function hasUrl(req, res, next) {
+    if (req.body.data.link_url) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have link_url property",
+    });
+}
+
+function hasText(req, res, next) {
+    if (req.body.data.link_text) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have link_text property",
+    });
+}
+
+function hasType(req, res, next) {
+    if (
+        req.body.data.article_id ||
+        req.body.data.form_id ||
+        req.body.data.object_id
+    ) {
+        return next();
+    }
+    next({
+        status: 400,
+        message: "data must have article_id/form_id/object_id property",
+    });
+}
+
 module.exports = {
-    create: [hasData, asyncErrorBoundary(create)],
+    create: [hasData, hasText, hasUrl, hasType, asyncErrorBoundary(create)],
     find: [asyncErrorBoundary(find)],
     update: [asyncErrorBoundary(update)],
     remove: [asyncErrorBoundary(remove)],
