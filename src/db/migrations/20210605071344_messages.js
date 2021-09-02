@@ -3,6 +3,7 @@ exports.up = function (knex) {
         table.increments("message_id").primary();
         table.text("name");
         table.text("email");
+        table.text("subject");
         table.text("message");
         table.timestamps(true, true);
     });

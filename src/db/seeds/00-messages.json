@@ -2,11 +2,13 @@
     {
         "name": "Daniel",
         "email": "danieljosephdenney@gmail.com",
+        "subject": "test1",
         "message": "this is a test seed data object for the messages database migration"
     },
     {
         "name": "Rebekah",
         "email": "rebekahdenney@gmail.com",
+        "subject": "test2",
         "message": "this is another test seed data object for the messages database migration"
     }
 ]
